@@ -1,5 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .project-interface {
-    background-image: url('./images/projectBackGround.jpg');
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero {
+  flex: 1;
+  background-image: url('./images/projectBackGround.jpg');
     background-size: cover;
-    /* Add other styles as needed */
-  }
+  /* Add any additional styles for the hero section */
+}
+
+/* Adjust the styles for the Navbar and Footer components as needed */

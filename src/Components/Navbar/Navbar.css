@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+}
+.navbar-brand {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    /* color: #fff; */
+  }
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    text-decoration: none;
+    color: rgb(112, 89, 132);
+}

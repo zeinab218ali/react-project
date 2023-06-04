@@ -4,14 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './../src/Components/Home/Home';
-import About from './../src/Components/About/About';
-import Contact from './../src/Components/Contact/Contact';
+import Register from './Components/Register/Register';
+import Login from './Components/Login/Login';
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Link,
 } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,12 +23,12 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: "about",
-        element: <About/>
+        path: "login",
+        element: <Login/>
       },
       {
-        path: "contact",
-        element: <Contact/>
+        path: "register",
+        element: <Register/>
       },
     ]
   },
