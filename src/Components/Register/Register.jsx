@@ -40,6 +40,14 @@ function RegisterForm() {
     setProvince(e.target.value);
   };
 
+  const handleSubmit = ()=>{
+    alert("Student added successfully!")
+    setCollege("")
+    setName('')
+    setPassword("")
+    setUniversityId("")
+    setProvince("")
+  }
   return (
     <div className="register-container">
       <form className="register-form" onSubmit={handleFormSubmit}>
@@ -103,7 +111,7 @@ function RegisterForm() {
             {/* Add more provinces as needed */}
           </select>
         </div>
-        <button type="submit">Register</button>
+        <button type="button" onClick={handleSubmit}>Register</button>
       </form>
     </div>
   );
