@@ -23,3 +23,8 @@
     text-decoration: none;
     color: rgb(112, 89, 132);
 }
+
+.nav-inline {
+    display: inline-block;
+    margin-left: 10px;
+}

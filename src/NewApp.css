@@ -10,9 +10,11 @@ body {
 }
 
 .hero {
-  flex: 1;
-  background-image: url('./images/projectBackGround.jpg');
-    background-size: cover;
+  /* flex: 1; */
+  /* background-image: url('./images/projectBackGround.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -5px;
   /* Add any additional styles for the hero section */
 }
 

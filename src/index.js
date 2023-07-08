@@ -32,6 +32,14 @@ const router = createBrowserRouter([
       },
     ]
   },
+  {
+    path:'activities',
+    element: <div>asdasdasdad</div>
+  },
+  {
+    path:'contact-us',
+    element: <div>contact-us</div>
+  }
   
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
