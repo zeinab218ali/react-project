@@ -3,8 +3,8 @@
     height: 300px; 
     
   } */
-  .Carousel, .Carousel.Item .image{
-    height: 500px;
+  .image{
+    height: 100%;
     width: 100%;
     object-fit: cover;
   }
