@@ -40,7 +40,7 @@ body{
     border-radius: 4px;
   }
   
-  button[type="submit"] {
+  button{
     display: block;
     width: 100%;
     padding: 10px;

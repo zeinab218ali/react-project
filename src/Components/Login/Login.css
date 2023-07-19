@@ -1,6 +1,6 @@
 /* LoginForm.css */
 body{
-  background:linear-gradient(45deg, #eb5db7aa, rgba(48, 65, 252, 0.773));
+  background:linear-gradient(45deg, rgba(48, 65, 252, 0.773),#e751c773);
 }
 .login-container {
     display: flex;
@@ -39,7 +39,7 @@ body{
     border-radius: 4px;
   }
   
-  button[type="button"] {
+  button{
     display: block;
     width: 100%;
     padding: 10px;
