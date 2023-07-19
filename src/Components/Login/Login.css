@@ -1,17 +1,20 @@
 /* LoginForm.css */
-
+body{
+  background:linear-gradient(45deg, #eb5db7aa, rgba(48, 65, 252, 0.773));
+}
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-top: 150px; */
     height: 100vh;
   }
   
   .login-form {
-    background-color: #f2f2f2;
-    border-radius: 8px;
+    background-color: #f2f2f294;
+    border-radius: 15px;
     padding: 50px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
   
   .login-form h2 {
@@ -31,12 +34,12 @@
   
   .form-group input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
-  button[type="submit"] {
+  button[type="button"] {
     display: block;
     width: 100%;
     padding: 10px;
@@ -46,4 +49,11 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  
+  /* button{
+    width: 100%;
+    padding: 7px;
+    font-size: 18px;
+    background-color: #52b352;
+    border-radius: 18px;
+    border: none;
+  } */

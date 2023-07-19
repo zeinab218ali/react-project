@@ -28,7 +28,7 @@ function MyNavbar(){
   return(
     <Navbar>
       <Container>
-        <Navbar.Brand href="/home">My Website</Navbar.Brand>
+        <Navbar.Brand className='brand' href="/home">My Website</Navbar.Brand>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
         <Navbar.Collapse className='nav-inline' id="basic-navbar-nav">
           <Nav className="me-auto">

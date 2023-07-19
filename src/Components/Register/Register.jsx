@@ -108,6 +108,17 @@ function RegisterForm() {
             <option value="Aleppo">Aleppo</option>
             <option value="Damascus">Damascus</option>
             <option value="Homs">Homs</option>
+            <option value="Homs">Hama</option>
+            <option value="Homs">Tartus</option>
+            <option value="Homs">Latakia</option>
+            <option value="Homs">Deir ez-Zor</option>
+            <option value="Homs">Raqqa</option>
+            <option value="Homs">Idlib</option>
+            <option value="Homs">AL-Suwaydaa</option>
+            <option value="Homs">Quneitra</option>
+            <option value="Homs">Al-Hasakah</option>
+            <option value="Homs">Rif Dimashq</option>
+            <option value="Homs">Daraa</option>
             {/* Add more provinces as needed */}
           </select>
         </div>

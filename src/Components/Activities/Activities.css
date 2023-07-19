@@ -1,0 +1,28 @@
+/* Custom CSS */
+/* .carousel .carousel-item {
+    height: 300px; 
+    
+  } */
+  .test, .test img {
+    height: 500px;
+  }
+  
+  /* Responsive classes */
+  @media (min-width: 576px) {
+    .carousel .carousel-item {
+      height: 400px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .carousel .carousel-item {
+      height: 500px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .carousel .carousel-item {
+      height: 600px;
+    }
+  }
+  

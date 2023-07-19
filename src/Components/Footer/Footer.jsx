@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import './Footer.css';
 function MyFooter() {
   return (
     <footer>
-      <Container style={{background: '#000',display: 'flex', justifyContent: 'space-evenly', height: '100px', alignItems: 'center'}}>
-      <Link to='/activities'>activities</Link>
-      <Link to='/contact-us'>contact-us</Link>
+      <Container className='container-style'>
+      <Link to='/activities' className='footer-link'>activities</Link>
+      <Link to='/contact-us'className='footer-link'>contact-us</Link>
       </Container>
     </footer>
   );

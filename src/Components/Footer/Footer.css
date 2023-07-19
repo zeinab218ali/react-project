@@ -1,0 +1,19 @@
+.container-style{
+    height: 100px;
+    background: #00000074;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .container-style .footer-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25PX;
+}
+footer .container-style  .footer-link:hover
+{
+    text-decoration: none;
+    color: rgb(190, 128, 244);
+}
+
+/* style={{background: '#000',display: 'flex', justifyContent: 'space-evenly', height: '100px', alignItems: 'center'}} */

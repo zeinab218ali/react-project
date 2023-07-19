@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from './../src/Components/Home/Home';
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
+import Activities from './Components/Activities/Activities';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
   // },
   {
     path:'activities',
-    element: <div>asdasdasdad</div>
+    element: <Activities/>
   },
   {
     path:'contact-us',

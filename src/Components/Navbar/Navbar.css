@@ -1,9 +1,12 @@
 .navbar {
-    background-color: #333;
+    background-color: #4742429d;
     display: flex;
     align-items: center;
     gap: 50px;
     padding: 20px 30px;
+}
+.brand{
+    color: #fff; 
 }
 
 .nav-link {
@@ -21,7 +24,7 @@
 .nav-link:active,
 .nav-link:focus {
     text-decoration: none;
-    color: rgb(112, 89, 132);
+    color: rgb(190, 128, 244);
 }
 
 .nav-inline {
