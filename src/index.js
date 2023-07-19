@@ -7,6 +7,7 @@ import Home from './../src/Components/Home/Home';
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
 import Activities from './Components/Activities/Activities';
+import Contact from './Components/Contact-us/Contact';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
   },
   {
     path:'contact-us',
-    element: <div>contact-us</div>
+    element: <Contact/>
   }
   
 ]);
