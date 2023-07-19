@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
+import axios from 'axios';
 import './Contact.css';
 
 const ComplaintForm = () => {
@@ -7,15 +8,30 @@ const ComplaintForm = () => {
   const [universityId, setUniversityId] = useState('');
   const [complaint, setComplaint] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can perform actions with the complaint data, such as sending it to a server or storing it in a database
-    console.log('Submitting complaint:', { name, universityId, complaint });
 
-    // Reset form fields
-    setName('');
-    setUniversityId('');
-    setComplaint('');
+    try {
+      const response = await axios.post('YOUR_BACKEND_API_ENDPOINT/complaints', {
+        name,
+        universityId,
+        complaint,
+      });
+      console.log('Complaint submitted:', response.data);
+
+      // Reset form fields
+      setName('');
+      setUniversityId('');
+      setComplaint('');
+
+      // Display a success message or take appropriate action
+      alert('Complaint submitted successfully!');
+    } catch (error) {
+      console.log('Error submitting complaint:', error);
+
+      // Display an error message or take appropriate action
+      alert('An error occurred. Please try again.');
+    }
   };
 
   return (
@@ -61,3 +77,4 @@ const ComplaintForm = () => {
 };
 
 export default ComplaintForm;
+

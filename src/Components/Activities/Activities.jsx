@@ -56,7 +56,7 @@ const ResponsiveCarousel = () => {
           src={require('./../../assets/images/image1.jpg')}
           alt="First slide"
         />
-        <p className="legend">Image 1</p>
+        <p className="legend">Theatrical activities</p>
       </div>
       <div>
       <img
@@ -64,7 +64,7 @@ const ResponsiveCarousel = () => {
           src={require('./../../assets/images/image3.jpg')}
           alt="First slide"
         />
-        <p className="legend">Image 2</p>
+        <p className="legend">Pay attention to beautiful sounds</p>
       </div>
       <div>
       <img
@@ -72,7 +72,7 @@ const ResponsiveCarousel = () => {
           src={require('./../../assets/images/image2.jpg')}
           alt="First slide"
         />
-        <p className="legend">Image 3</p>
+        <p className="legend">trips</p>
       </div>
     </Carousel>
   );
