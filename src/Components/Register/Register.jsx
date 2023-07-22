@@ -139,11 +139,13 @@ function RegisterForm() {
   const [college, setCollege] = useState('');
   const [universityId, setUniversityId] = useState('');
   const [province, setProvince] = useState('');
+  const [email, setEmail] = useState('');
+
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('YOUR_BACKEND_API_ENDPOINT/registration', {
+      const response = await axios.post('http://192.168.1.111:4000/registration', {
         name,
         password,
         college,
@@ -154,6 +156,7 @@ function RegisterForm() {
       // Reset form fields after successful submission
       setCollege('');
       setName('');
+      setEmail('')
       setPassword('');
       setUniversityId('');
       setProvince('');
@@ -168,6 +171,10 @@ function RegisterForm() {
 
   const handleNameChange = (e) => {
     setName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
@@ -198,6 +205,17 @@ function RegisterForm() {
             placeholder="Enter your name"
             value={name}
             onChange={handleNameChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={handleEmailChange}
             required
           />
         </div>
@@ -246,7 +264,7 @@ function RegisterForm() {
             <option value="Aleppo">Aleppo</option>
             <option value="Damascus">Damascus</option>
             <option value="Homs">Homs</option>
-            <option value="Homs">Hama</option>
+            <option value="Hama">Hama</option>
             <option value="Homs">Tartus</option>
             <option value="Homs">Latakia</option>
             <option value="Homs">Deir ez-Zor</option>

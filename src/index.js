@@ -14,6 +14,8 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import RegisterRequest from './Components/RegisterRequest/RegisterRequest';
+import AdminDashboard from './Components/AdminDashboard/AdminDashboard';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
         path: "register",
         element: <Register/>
       },
+      {
+        path: "registerRequest",
+        element: <RegisterRequest />
+      },
+      {
+        path: "adminDashboard",
+        element: <AdminDashboard />
+      }
     ]
   },
   // {
