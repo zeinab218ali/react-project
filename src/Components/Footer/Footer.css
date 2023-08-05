@@ -1,3 +1,9 @@
+
+.footer-container{
+    position: fixed;
+    bottom: 37px;
+    width: 100%;
+}
 .container-style{
     height: 100px;
     background: #00000074;

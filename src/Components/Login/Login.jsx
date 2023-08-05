@@ -41,10 +41,13 @@ function Login() {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('YOUR_BACKEND_API_ENDPOINT/login', {
-        email,
-        password,
-      });
+      // const response = await axios.post('YOUR_BACKEND_API_ENDPOINT/login', {
+      //   email,
+      //   password,
+      // });
+      const response = {
+       data: { email: 'admin@admin.com'}, status: 200
+      }
       console.log('Login response:', response.data);
       // Check if login is successful (you may need to modify this condition based on your backend response)
       // if (response.data.success && response.data.isAdmin) {
@@ -62,13 +65,18 @@ function Login() {
       if(response.status === 200){
         // localStorage.setItem('isAdmin', response.isAdmin);
         // localStorage.setItem('userData', response.data)
-        if(response.isAdmin){
+        const adminEmail = localStorage.getItem("adminEmail")
+        console.log(adminEmail , email, adminEmail === email)
+        if(email === adminEmail){
+          
           localStorage.setItem('isAdmin', true);
+          localStorage.setItem('isLogged', true)
           localStorage.setItem('userData', response.data);
-          window.location.href = '/admin-dashboard';
+          window.location.href = '/adminDashboard';
         }
         else{
           localStorage.setItem('isAdmin', false);
+          localStorage.setItem('isLogged', true)
           localStorage.setItem('userData', response.data)
           window.location.href = '/dashboard';
         }

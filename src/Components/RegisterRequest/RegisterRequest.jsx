@@ -29,34 +29,19 @@ function RegisterRequest() {
 
   // const fetchStudents = async () => {
   //   try {
-  //     //const response = await axios.get('YOUR_BACKEND_API_ENDPOINT/students'); // Replace YOUR_BACKEND_API_ENDPOINT with your actual backend API endpoint
-  //     // setStudents(response.data);
+  //     const response = await axios.get('YOUR_BACKEND_API_ENDPOINT/students'); // Replace YOUR_BACKEND_API_ENDPOINT with your actual backend API endpoint
+  //     setStudents(response.data);
+  //     setAffectedItems(response.data.length)
   //   } catch (error) {
   //     console.log(error);
   //   }
   // };
 
-  // const students = [{
-  //   id: 123,
-  //   name: 'Zeinab Ali',
-  //   email: 'zozo@gmail.com',
-  //   province: 'Latakia',
-  //   college: 'Informatics'
-  // },
-  // {
-  //   id: 124,
-  //   name: 'Zeinab Ali',
-  //   email: 'zozo@gmail.com',
-  //   province: 'Latakia',
-  //   college: 'Informatics'
-  // }
-  // ]
   const handleAccept =  (id) => {
     // const response = await axios.post(`YOUR_BACKEND_API_ENDPOINT/accept/${id}`); 
     // if(response.status === 200){
       const index = students.findIndex(item => item.id ===  id)
       students.splice(index,1)
-      // console.log(id, students, index)
       setStudents(students)
       setAffectedItems(affectedItems +1)
     // }

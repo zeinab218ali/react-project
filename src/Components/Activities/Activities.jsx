@@ -49,32 +49,37 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Activities.css';
 const ResponsiveCarousel = () => {
   return (
-    <Carousel showThumbs={false}>
+    <div>
+    <Carousel showArrows={false} showThumbs={false} interval={3000} >
       <div>
       <img
-          className="image"
-          src={require('./../../assets/images/image1.jpg')}
+          //className="image"
+          src='assets/images/image1.jpg'
           alt="First slide"
+          height="750px"
         />
         <p className="legend">Theatrical activities</p>
       </div>
       <div>
       <img
-          className="image"
-          src={require('./../../assets/images/image3.jpg')}
+          //className="image"
+          src='assets/images/image3.jpg'
           alt="First slide"
+          height="750px"
         />
         <p className="legend">Pay attention to beautiful sounds</p>
       </div>
       <div>
       <img
-          className="image"
-          src={require('./../../assets/images/image2.jpg')}
+          // className="image"
+          src='assets/images/image2.jpg'
           alt="First slide"
+          height="750px"
         />
         <p className="legend">trips</p>
       </div>
     </Carousel>
+    </div>
   );
 };
 

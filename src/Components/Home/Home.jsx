@@ -8,7 +8,7 @@ function Home() {
     
     <section className="hero">
       {/* <img src={background} className=''/> */}
-      <Image src={background} fluid style={{width:'100%', height:'calc(100vh - 175px)'}} />
+      <Image src={background} fluid style={{width:'100%', height:'calc(100vh - 216px)'}} />
         {/* Add the content for the hero section */}
     </section>
   );

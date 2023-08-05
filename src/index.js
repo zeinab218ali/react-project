@@ -16,13 +16,16 @@ import {
 } from "react-router-dom";
 import RegisterRequest from './Components/RegisterRequest/RegisterRequest';
 import AdminDashboard from './Components/AdminDashboard/AdminDashboard';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App/>,
+
     children:[
       {
+        index: true,
         path: "home",
         element: <Home/>
       },
@@ -41,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "adminDashboard",
         element: <AdminDashboard />
+      },
+      {
+        path: "dashboard",
+        element: <Dashboard />
       }
     ]
   },
@@ -61,7 +68,7 @@ const router = createBrowserRouter([
     element: <Contact/>
   }
   
-]);
+],);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

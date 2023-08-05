@@ -20,17 +20,20 @@ import './Navbar.css'; // Import custom CSS file
 function MyNavbar(){
 
   const logout = ()=>{
-    alert("logged out")
+    
     localStorage.setItem("isLogged", false)
+    localStorage.setItem("isAdmin",false)
     setIsLogged(false)
     setIsAdmin(false)
+    alert("logged out")
+    window.location.href = '/'
 
   }
   const [isLogged, setIsLogged] = React.useState(localStorage.getItem("isLogged") ==="true")
   const [isAdmin, setIsAdmin] = React.useState(localStorage.getItem("isAdmin") ==="true")
 
   const getLinks = () => {
-    console.log(isAdmin)
+    // console.log(isAdmin)
     if(isLogged){
       if(isAdmin){
         return (<>
@@ -44,7 +47,9 @@ function MyNavbar(){
         </>)
       }
       else{
-        return null
+        return         <Nav.Link>
+        <Link to="/dashboard" className="nav-link ">My Profile</Link>
+      </Nav.Link>
       }
 
     } else{
@@ -62,7 +67,7 @@ function MyNavbar(){
     }
   }
   return(
-    <Navbar>
+    <Navbar style={{position: 'fixed', top: 0, width: '100%'}}>
       <Container>
         <Navbar.Brand className='brand' href="/home">My Website</Navbar.Brand>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
