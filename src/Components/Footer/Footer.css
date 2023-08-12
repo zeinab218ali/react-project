@@ -1,8 +1,9 @@
 
 .footer-container{
     position: fixed;
-    bottom: 37px;
+    bottom: 0;
     width: 100%;
+    height: 60px;
 }
 .container-style{
     height: 100px;
@@ -15,11 +16,14 @@ footer .container-style .footer-link{
     text-decoration: none;
     color: #fff;
     font-size: 25PX;
+    align-self: baseline;
+    margin-top: 15px;
 }
 footer .container-style  .footer-link:hover
 {
     text-decoration: none;
     color: rgb(190, 128, 244);
+
 }
 
 /* style={{background: '#000',display: 'flex', justifyContent: 'space-evenly', height: '100px', alignItems: 'center'}} */

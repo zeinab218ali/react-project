@@ -8,6 +8,7 @@ import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
 import Activities from './Components/Activities/Activities';
 import Contact from './Components/Contact-us/Contact';
+import AdminEmail from './Components/AdminEmail/AdminEmail';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard />
+      },
+      {
+        path: 'admin-email',
+        element: <AdminEmail />
       }
     ]
   },

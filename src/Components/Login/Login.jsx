@@ -41,13 +41,10 @@ function Login() {
 
   const handleSubmit = async () => {
     try {
-      // const response = await axios.post('YOUR_BACKEND_API_ENDPOINT/login', {
-      //   email,
-      //   password,
-      // });
-      const response = {
-       data: { email: 'admin@admin.com'}, status: 200
-      }
+      const response = await axios.post('http://192.168.1.15:8000/api/auth/login?email='+email+'&password='+password);
+      // const response = {
+      //  data: { email: 'admin@admin.com'}, status: 200
+      // }
       console.log('Login response:', response.data);
       // Check if login is successful (you may need to modify this condition based on your backend response)
       // if (response.data.success && response.data.isAdmin) {

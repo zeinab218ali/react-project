@@ -145,14 +145,15 @@ function RegisterForm() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://192.168.1.111:4000/registration', {
+      const response = await axios.post('http://192.168.1.111:4000/api/insert-apply', {
         name,
         password,
-        college,
-        universityId,
-        province
+        faculty: college,
+        faculty_id: universityId,
+        state: province,
+        email: email
       });
-      console.log('Registration request submitted:', response.data);
+      // console.log('Registration request submitted:', response.data);
       // Reset form fields after successful submission
       setCollege('');
       setName('');
